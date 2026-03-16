@@ -9,8 +9,8 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello(@RequestParam(required = false) String value) {
-        String name = "World";
+        String name = "Mundo";
         if (value!=null) name = value;
-        return String.format("Hello, %s!", name);
+        return String.format("¡Hola, %s!", name);
     }
 }
